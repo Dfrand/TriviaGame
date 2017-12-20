@@ -1,0 +1,53 @@
+html {
+	background-color: rgb(122,250,77);
+}
+body {
+	background-image: url("../images/animals.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black
+}
+
+
+#wrapper {
+	background: green;
+	width: 50%;
+	text-align: center;
+	color: rgb(122,250,77);
+	margin: auto;
+	border-radius: 10px;
+	margin-top: 50px;
+}
+
+h1#title {
+	text-align: center;
+	color: rgb(122,250,77);
+	font-size: 120px;
+	font-family: 'Pangolin', cursive;
+	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black
+	
+}
+
+input[type="radio"] { 
+    margin-left: 20px;
+    margin-right: 5px;
+
+}
+
+#start{
+ 	margin-left: 35%;
+	background-color: green;
+	border: black;
+	margin-top: 100px;
+	border-radius: 250px;
+	padding: 25px; 
+}
+
+#start:hover {
+	cursor: pointer;
+	transform: translate(1px,5px);
+}
+
+footer {
+	height: 100px;
+}
