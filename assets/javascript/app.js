@@ -1,5 +1,3 @@
-
-
 // $.ajax({
 //   url: "https://opentdb.com/api.php?amount=10&category=27&difficulty=medium&type=multiple",
 //   method: "GET" 
@@ -17,6 +15,9 @@ $('#start').on('click', function() {
     game.start();
 })
 
+$(document).on('click', '#finished', function() {
+    game.finished();
+})
 
 var questions = [{
     question: "What land mammal other than man has the longest lifespan?",
@@ -78,7 +79,7 @@ var game = {
         $('#counter').html(game.counter);
         if (game.counter <= 0) {
             console.log("Time is Up!");
-            game.done();
+            game.finished();
         }
     },
     start: function() {
@@ -91,8 +92,11 @@ var game = {
                 $('#wrapper').append("<input type='radio' name='question-" + i + "' value='" + questions[i].answers[j] + "'>" + questions[i].answers[j])
             }
         }
+
+        $('#wrapper').append('<br><button id="finished"><img src="assets/images/finish.png"></button>');
+
     },
-    done: function() {
+    finished: function() {
         $.each($("input[name='question-0']:checked"), function() {
             if ($(this).val() == questions[0].correctAnswer) {
                 game.correct++;
