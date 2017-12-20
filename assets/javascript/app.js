@@ -1,5 +1,3 @@
-// alert('me');
-// console.log("Me2");
 
 
 // $.ajax({
@@ -74,7 +72,7 @@ var questions = [{
 var game = {
     correct: 0,
     incorrect: 0,
-    counter: 90,
+    counter: 3,
     countdown: function() {
         game.counter--;
         $('#counter').html(game.counter);
