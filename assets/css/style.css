@@ -29,6 +29,10 @@ input[type="radio"] {
     margin-right: 5px;
 }
 
+input:hover{
+	cursor: pointer;
+}
+
 #start {
     margin-left: 33%;
     background-color: green;
