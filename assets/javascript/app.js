@@ -28,7 +28,7 @@ var questions = [{
     correctAnswer: "Dancing"
 }, {
     question: "The longest beetle in the world is how long?",
-    answers: ["6 inches", "8 inches", "2 feet", "4 feet"],
+    answers: ["6 inches", "8 inches", "12 inches", "3 inches"],
     correctAnswer: "6 inches"
 }, {
     question: "An earthworm has how many hearts?",
@@ -72,7 +72,7 @@ var questions = [{
 var game = {
     correct: 0,
     incorrect: 0,
-    counter: 3,
+    counter: 90,
     countdown: function() {
         game.counter--;
         $('#counter').html(game.counter);
